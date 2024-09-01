@@ -1,0 +1,170 @@
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body
+{
+	width: 100%;
+}
+.nav-container
+{
+	width: 100%;
+	background-color: lightyellow;
+	height: 30px;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+.logo 
+{
+	font-size: 32px;
+	text-decoration: none;
+	color: black;
+}
+#cart-icon
+{
+	cursor: pointer;
+}
+#cart-icon span
+{
+    color: tomato;
+}
+.section-title 
+{
+	text-align: center;
+/*	background-color: tomato;*/
+	margin-top: 20px;
+}
+.shop-content
+{
+	background-color: white;
+	border: 2px solid;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-column-gap: 100px;
+	padding: 30px;
+	grid-row-gap: 50px;
+	/*height: 500px;
+	width: 100px;*/
+}
+.product-box 
+{
+	display: grid;
+	border: 1px solid;
+	background-color: black;
+	height: 400px;
+	width: 350px;
+
+}
+.product-img
+{
+	height: 300px;
+	width: 348px;
+	background-size: cover;  
+}
+.product-img:hover
+{
+	transition: 0.5s;
+	transform: scaleY(1.2 );
+}
+
+.product-title
+{
+	color: white;
+	font-size: 20px;
+	text-align: center;
+}
+.price 
+{
+	color: white;
+	margin-left: 160px;
+}
+.add-cart
+{
+	color: white;
+	cursor: pointer;
+	margin-left: 160px;
+}
+/*cart style*/
+.cart 
+{
+	height: 700px;
+	width: 350px;
+	border: 1px solid;
+	background-color: black;
+	color: white;
+	margin-left: 1180px;
+	top: 30px;
+	position: absolute;
+    right: -100%;
+
+}
+.cart-active
+{
+	right: 0;
+	transition: 0.3s;
+}
+.cart-box
+{
+	border: 2px solid;
+	margin-top: 20px;
+}
+.cart-title
+{
+	text-align: center;
+	margin-top: 70px;
+}
+.cart-img
+{
+	object-fit: pluggin;
+	height: 100px;
+	width: 100px;
+	margin-left: 30px;
+	margin-top: 20px;
+}
+.detail-box
+{
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+}
+.cart-quantity
+{
+	width: 40px;
+	background-color: tomato;
+}
+.cart-remove
+{
+	margin-left: 280px;
+	margin-top: 20px;
+	font-size: 20px;
+	color: tomato;
+	cursor: pointer;
+}
+.total 
+{
+/*	background-color: tomato;*/
+	margin-left: 60px;
+	margin-bottom: 0px;
+}
+.btn-buy
+{
+	background-color: grey;
+	height: 50px;
+	width: 160px;
+	border-radius: 30px;
+	border: none;
+	margin-left: 100px;
+	margin-top: 50px;
+	cursor: pointer;
+}
+#close-cart
+{
+	
+	position: absolute;
+	top: 1rem;
+	left: 10px;
+	cursor: pointer;
+}
